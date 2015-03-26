@@ -1,4 +1,6 @@
 
+protoc.exe
+
 internal/protobuf-cpp-3.0.0-alpha-2/protoc.exe
 internal/protobuf-cpp-3.0.0-alpha-2/zz_build_debug_proj_mt_tmp/*
 

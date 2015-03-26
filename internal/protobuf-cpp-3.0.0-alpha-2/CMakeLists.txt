@@ -158,6 +158,8 @@ set(LIBPB_SRC
 # libprotoc
 
 set(LIBPBC_HDR
+	${LIBPB_HDR}
+
 	./src/google/protobuf/compiler/code_generator.h
 	./src/google/protobuf/compiler/command_line_interface.h
 	./src/google/protobuf/compiler/subprocess.h
@@ -216,6 +218,8 @@ set(LIBPBC_HDR
 )
 
 set(LIBPBC_SRC
+	${LIBPB_SRC}
+
 	./src/google/protobuf/compiler/code_generator.cc
 	./src/google/protobuf/compiler/command_line_interface.cc
 
@@ -284,9 +288,6 @@ add_executable(protoc
 
 	${LIBPBC_HDR}
 	${LIBPBC_SRC}
-
-	${LIBPB_HDR}
-	${LIBPB_SRC}
 )
 
 install(TARGETS protoc
