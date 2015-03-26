@@ -1,4 +1,4 @@
-// Copyright 2014 <chaishushan{AT}gmail.com>. All rights reserved.
+// Copyright 2015 <chaishushan{AT}gmail.com>. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -45,7 +45,7 @@ func genIncludeFiles() {
 		newname := "z_libprotoc_" + strings.Replace(relpath, "/", "_", -1)
 
 		ioutil.WriteFile(newname, []byte(fmt.Sprintf(
-			`// Copyright 2014 <chaishushan{AT}gmail.com>. All rights reserved.
+			`// Copyright 2015 <chaishushan{AT}gmail.com>. All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
