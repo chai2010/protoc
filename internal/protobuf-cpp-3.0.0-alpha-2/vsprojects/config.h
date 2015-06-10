@@ -1,6 +1,10 @@
 /* protobuf config.h for MSVC.  On other platforms, this is generated
  * automatically by autoheader / autoconf / configure. */
 
+ #if !defined(_WIN32) && !defined(__EMSCRIPTEN__)
+ #define HAVE_PTHREAD 1
+ #endif
+
 /* the location of <hash_map> */
 //#define HASH_MAP_H <hash_map>
 

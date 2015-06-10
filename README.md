@@ -8,6 +8,8 @@ or
 
 	go get -ldflags "-s" github.com/chai2010/protoc
 
+*Note for Windows user: Go1.4 for windows don't support static link with C++, need install Go1.5+ !*
+
 
 ## Help
 
@@ -50,8 +52,8 @@ Parse PROTO_FILES and generate output based on the options given:
                               (Microsoft Visual Studio format).
   --print_free_field_numbers  Print the free field numbers of the messages
                               defined in the given proto files. Groups share
-                              the same field number space with the parent 
-                              message. Extension ranges are counted as 
+                              the same field number space with the parent
+                              message. Extension ranges are counted as
                               occupied fields numbers.
   --plugin=EXECUTABLE         Specifies a plugin executable to use.
                               Normally, protoc searches the PATH for
