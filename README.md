@@ -4,6 +4,11 @@
 
 	go get github.com/chai2010/protoc
 
+or
+
+	go get -ldflags "-s" github.com/chai2010/protoc
+
+
 ## Help
 
 ```
